@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajith Kumar Kunchala - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f4f4f4, #e8eaf6);
+            color: #333;
+        }
+        header {
+            background: #002B5B;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #FFD700;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            font-size: 1.8em;
+            color: #002B5B;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        ul li img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .profile-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .profile-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .about-section {
+            text-align: center;
+            margin: 20px auto;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .project-card {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            flex: 1 1 calc(33.333% - 40px);
+            max-width: calc(33.333% - 40px);
+            box-sizing: border-box;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .project-description {
+            margin-bottom: 10px;
+            text-align: justify;
+            color: #555;
+        }
+        .project-link {
+            text-align: center;
+        }
+        .project-link a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-link a:hover {
+            color: #FF4500;
+        }
+        footer {
+            text-align: center;
+            background: #002B5B;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            header nav {
+                flex-direction: column;
+            }
+            .project-card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Ajith Kumar Kunchala</h1>
+        <p>Warangal (Telangana), India | +91-8121052820 | <a href="mailto:ajithkumarkunchala76@gmail.com" style="color: white;">ajithkumarkunchala76@gmail.com</a></p>
+        <nav>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#accomplishments">Accomplishments</a>
+        </nav>
+    </header>
+
+    <div class="profile-image">
+        <img src="./Ajith.jpg" alt="Ajith Kumar Kunchala">
+    </div>
+
+    <section class="about-section">
+        <h2>About Me</h2>
+        <p>I am a passionate Computer Science student specializing in Artificial Intelligence and Machine Learning (AIML). With a strong foundation in programming and a keen interest in solving real-world problems, I have developed expertise in machine learning, deep learning, and generative AI. My projects demonstrate my ability to apply theoretical knowledge to practical challenges, and I strive to continuously learn and grow in this dynamic field.</p>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <p><strong>SR UNIVERSITY (2021 - 2025)</strong><br>Bachelor of Technology in Computer Science | Warangal, India<br>CGPA: 8.6/10</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <p><strong>Campus Technical Trainee | SR University (08/2024 - 11/2024)</strong></p>
+            <ul>
+                <li>Provided hands-on support and guidance to students in mastering Data Structures concepts and Java programming during lab sessions.</li>
+                <li>Implemented an evaluation framework for lab sessions; improved student engagement metrics by 25%.</li>
+                <li>Enhanced student understanding of experimental procedures, increasing engagement by 40%.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li> <strong>Programming:</strong> C, Java, Python</li>
+                <li> <strong>Databases:</strong> SQL</li>
+                <li><strong>Frameworks:</strong> Scikit-Learn, TensorFlow, Keras</li>
+                <li><strong>Tools:</strong> Visual Studio Code, Jupyter Notebook, Google Colab</li>
+                <li> <strong>Web:</strong> HTML, CSS</li>
+                <li><strong>Source & Version Control:</strong> Git, GitHub</li>
+                <li><strong>Other Skills:</strong> Machine Learning, Deep Learning, Generative AI</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-title">Movie Review Sentiment Analysis</div>
+                    <div class="project-description">Built a sentiment analysis model using Python, Streamlit, and NLP to predict whether a movie review is positive or negative. The model uses a Recurrent Neural Network (RNN) architecture to capture sequential patterns effectively.</div>
+                    <div class="project-link"><a href="https://github.com/KUNCHALAAJITH/Movie_review_sentiment_analysis">[CODE]</a></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Emotion Detection</div>
+                    <div class="project-description">Developed a CNN model for classifying happy and sad emotions with 72% accuracy. Utilized TensorFlow and Keras for model implementation and applied robust preprocessing techniques.</div>
+                    <div class="project-link"><a href="https://github.com/KUNCHALAAJITH/emotion-detection">[CODE]</a></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Crop and Weed Detection</div>
+                    <div class="project-description">Created a detection system using deep learning for efficient agriculture. Leveraged image processing techniques to differentiate crops from weeds accurately.</div>
+                    <div class="project-link"><a href="https://github.com/KUNCHALAAJITH/CropandWeedDetection_AjithKumar_USC_UCT">[CODE]</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="accomplishments">
+        <div class="container">
+            <h2>Accomplishments</h2>
+            <ul>
+                <li>Grand Finale participant for Binance Ideathon (2022).</li>
+                <li>Winning team member of the Inter College Hackathon (2022).</li>
+                <li>OCI Generative AI Professional Certification (2024).</li>
+                <li>Microsoft Certified: Azure AI Fundamentals (2022).</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ajith Kumar Kunchala</p>
+    </footer>
+</body>
+</html>
